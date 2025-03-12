@@ -2,6 +2,12 @@
 
 This project visualizes the Mandelbrot set using a combination of C and x86-64 assembly language. The program is optimized for performance and precision, providing an interactive graphical interface to explore the fractal details of the Mandelbrot set at various scales.
 
+<div align="center">
+  <img src="images/mandelbrot.jpeg" alt="Image 1" width="49%">
+  <img src="images/mandelbrot_closer.jpeg" alt="Image 2" width="49%">
+</div>
+
+
 ## Features
 - **Interactive Exploration**: Zoom and pan through the Mandelbrot set to observe fractal details at different levels of magnification.
 - **Performance Optimization**: The program utilizes assembly language (x86-64) to optimize key calculations, ensuring smooth performance even for detailed visualizations.
@@ -50,3 +56,7 @@ Once the program is running, you can interact with the visualization:
 To clean the build files, run:
 ```bash
 make clean
+
+## License
+
+MIT License
