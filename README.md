@@ -4,7 +4,7 @@ This project visualizes the Mandelbrot set using a combination of C and x86-64 a
 
 <div align="center">
   <img src="images/mandelbrot.jpeg" alt="Image 1" width="50%">
-  <img src="images/mandelbrot_closer.jpeg" alt="Image 2" width="48%">
+  <img src="images/mandelbrot_closer.jpeg" alt="Image 2" width="49%">
 </div>
 
 
