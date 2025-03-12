@@ -1,21 +1,52 @@
-# arko_x86_64_mandelbrot
+# Mandelbrot Set Visualization | x86-64, C
 
+This project visualizes the Mandelbrot set using a combination of C and x86-64 assembly language. The program is optimized for performance and precision, providing an interactive graphical interface to explore the fractal details of the Mandelbrot set at various scales.
 
+## Features
+- **Interactive Exploration**: Zoom and pan through the Mandelbrot set to observe fractal details at different levels of magnification.
+- **Performance Optimization**: The program utilizes assembly language (x86-64) to optimize key calculations, ensuring smooth performance even for detailed visualizations.
+- **Cross-platform**: Built using the SDL2 library for graphics, making it compatible with multiple platforms.
 
-## Getting started
+## Files
+- **main.c**: The main C program responsible for initializing the graphical interface and managing the visualization.
+- **mandelbrot.h**: Header file containing function declarations and constants for the Mandelbrot set visualization.
+- **mandelbrot.s**: x86-64 assembly code that performs the calculations for rendering the Mandelbrot set with optimized performance.
+- **Makefile**: Automates the build process, compiling the C and assembly code and linking the program with the SDL2 library.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## Installation
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+Ensure you have the required libraries installed, especially SDL2, for graphical rendering.
 
-## Add your files
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/mandelbrot-visualization.git
+    cd mandelbrot-visualization
+    ```
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+2. **Install dependencies** (if not already installed):
+    - **SDL2**: Follow the installation instructions for your platform. For example, on Ubuntu:
+      ```bash
+      sudo apt-get install libsdl2-dev
+      ```
 
-```
-cd existing_repo
-git remote add origin https://gitlab-stud.elka.pw.edu.pl/jczosnek/arko_x86_64_mandelbrot.git
-git branch -M main
-git push -uf origin main
-```
+3. **Build the program**:
+    ```bash
+    make
+    ```
+
+4. **Run the program**:
+    ```bash
+    ./mandelbrot
+    ```
+
+## Usage
+
+Once the program is running, you can interact with the visualization:
+- **Zoom**: Use the mouse wheel to zoom in and out of the Mandelbrot set.
+- **Pan**: Click and drag to move the view around and explore different areas of the set.
+
+## Clean Up
+
+To clean the build files, run:
+```bash
+make clean
